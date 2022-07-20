@@ -3,6 +3,7 @@
 
 # from pre-0.3
 s/^Gravity=0.*/Trajectory=Straight/I
+s/^Trajectory\.Speed=(.*)/; &\n; FIXME ensure this is on Projectile and not on Weapon/I
 s/^Rad\.NoOwner=(y.*|t.*|1)/; &\n; FIXME put RadHasOwner=no on used RadType/I
 s/^Rad\.NoOwner=(n.*|f.*|1)/; &\n; FIXME put RadHasOwner=yes on used RadType/I
 s/^Death\.NoAmmo(.*)/AutoDeath\.OnAmmoDepletion\1\n; FIXME set appropriate AutoDeath\.Behavior if not set/I
