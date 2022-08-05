@@ -10,6 +10,7 @@ s/^Death\.NoAmmo(.*)/AutoDeath\.OnAmmoDepletion\1\n; FIXME set appropriate AutoD
 s/^Death\.Countdown(.*)/AutoDeath\.AfterDelay\1\n; FIXME set appropriate AutoDeath\.Behavior if not set/I
 s/^Death\.Peaceful=(y.*|t.*|1)/AutoDeath\.Behavior=vanish/I
 s/^Death\.Peaceful=(n.*|f.*|1)/AutoDeath\.Behavior=kill/I
+s/^([0-9]+)=(125|126),([0-9]+)/&  ; FIXME Ensure the time is specified in ingame seconds (15 frames per second)/I
 
 # from 0.2.2.2
 s/^PenetratesShield/Shield\.Penetrate/I
