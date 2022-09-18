@@ -22,12 +22,12 @@ s/^PlacementPreview\.Show=/PlacementPreview=/I
 s/^PlacementPreview\.TranslucentLevel=/PlacementPreview\.Translucency=/I
 s/^PlacementPreview\.Translucent=/PlacementPreview\.Translucency=/I
 # Placement Preview - Fix Translucency Value
-s/^PlacementGrid\.Translucency=1/PlacementGrid\.Translucency=25/I
-s/^PlacementGrid\.Translucency=2/PlacementGrid\.Translucency=50/I
-s/^PlacementGrid\.Translucency=3/PlacementGrid\.Translucency=75/I
-s/^PlacementPreview\.Translucency=1/PlacementPreview\.Translucency=25/I
-s/^PlacementPreview\.Translucency=2/PlacementPreview\.Translucency=50/I
-s/^PlacementPreview\.Translucency=3/PlacementPreview\.Translucency=75/I
+s/^PlacementGrid\.Translucency=1(($|\s|;)+)/PlacementGrid\.Translucency=25\1/I
+s/^PlacementGrid\.Translucency=2(($|\s|;)+)/PlacementGrid\.Translucency=50\1/I
+s/^PlacementGrid\.Translucency=3(($|\s|;)+)/PlacementGrid\.Translucency=75\1/I
+s/^PlacementPreview\.Translucency=1(($|\s|;)+)/PlacementPreview\.Translucency=25\1/I
+s/^PlacementPreview\.Translucency=2(($|\s|;)+)/PlacementPreview\.Translucency=50\1/I
+s/^PlacementPreview\.Translucency=3(($|\s|;)+)/PlacementPreview\.Translucency=75\1/I
 
 # from 0.2.2.2
 # =============================================
