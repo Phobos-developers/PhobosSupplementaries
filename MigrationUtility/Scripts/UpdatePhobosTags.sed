@@ -11,6 +11,7 @@ s/^Death\.NoAmmo(.*)/AutoDeath\.OnAmmoDepletion\1\n; FIXME set appropriate AutoD
 s/^Death\.Countdown(.*)/AutoDeath\.AfterDelay\1\n; FIXME set appropriate AutoDeath\.Behavior if not set/I
 s/^Death\.Peaceful=(y.*|t.*|1)/AutoDeath\.Behavior=vanish/I
 s/^Death\.Peaceful=(n.*|f.*|0)/AutoDeath\.Behavior=kill/I
+s/^([0-9]+)=(125|126),([0-9]+)/&  ; FIXME Ensure the time is specified in ingame seconds (15 frames per second)/I
 s/^PassengerDeletion\.SoylentFriendlies=(y.*|t.*|1)/PassengerDeletion\.SoylentAllowedHouses=all/I
 s/^PassengerDeletion\.SoylentFriendlies=(n.*|f.*|0)/PassengerDeletion\.SoylentAllowedHouses=enemies/I
 # Placement Preview - [AudioVisual]
@@ -65,7 +66,6 @@ s/^([0-9]+)=93,([0-9]+)(.*)/\1=14000,\2\3/I
 s/^([0-9]+)=83,([0-9]+)(.*)/\1=14001,\2\3/I
 s/^([0-9]+)=82,([0-9]+)(.*)/\1=14002,\2\3/I
 s/^([0-9]+)=111,([0-9]+)(.*)/\1=14003,\2\3/I
-s/^([0-9]+)=(125|126),([0-9]+)/&  ; FIXME Ensure the time is specified in ingame seconds (15 frames per second)/I
 s/^([0-9]+)=126,([0-9]+)(.*)/\1=16000,\2\3/I
 s/^([0-9]+)=125,([0-9]+)(.*)/\1=16001,\2\3/I
 s/^([0-9]+)=124,([0-9]+)(.*)/\1=16002,\2\3/I
