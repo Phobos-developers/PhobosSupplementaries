@@ -6,6 +6,7 @@ This repository contains stuff to make the life easier for [Phobos](https://gith
 
 - [Migration Utility](MigrationUtility/) to help mass replacing outdated Phobos tags
 - [Improved Vanilla Font](ImprovedFont/) with characters used by Phobos by default
+- [Digital Display Font](DigitalDiplayFont/) with example Digital Display shape font
 
 ## Credits
 
