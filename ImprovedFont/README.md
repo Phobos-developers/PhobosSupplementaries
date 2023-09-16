@@ -17,7 +17,7 @@ Contributing
 You can either submit your improvements via forking and doing a pull request or just via a PM/Mod Haven server on Discord.
 
 0. Make sure no other active [pull requests](https://github.com/Phobos-developers/PhobosSupplementaries/pulls) are changing fonts (otherwise when one or another merges, **you will have to reapply your changes manually!**).
-1. Download [Nyerguds' WWFontEditor](https://github.com/Phobos-developers/PhobosSupplementaries/pulls).
+1. Download [Nyerguds' WWFontEditor](http://nyerguds.arsaneus-design.com/project_stuff/2016/WWFontEditor/release/).
 2. Open the `game.fnt`, find and append/improve the character or character range of your interest.
 3. Submit your changes to us.
 
