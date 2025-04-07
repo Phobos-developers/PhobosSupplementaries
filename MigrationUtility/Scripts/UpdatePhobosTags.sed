@@ -150,12 +150,12 @@ s/^([0-9]+)=571,([0-9]+)(.*)/\1=18071,\2\3/I
 # from 0.2.2.2
 # =============================================
 s/^PenetratesShield/Shield\.Penetrate/I
-s/^BreaksShield/Shield\.Break/
+s/^BreaksShield/Shield\.Break/I
 s/^([0-9]+)=71,([0-9]+)(.*)/\1=10100,\2\3/I
 s/^([0-9]+)=72,([0-9]+)(.*)/\1=10103,\2\3/I
 s/^([0-9]+)=73,([0-9]+)(.*)/\1=10101,\2\3/I
 
 # from 0.1
 # =============================================
-s/^SpySat=(y.*|t.*|1)/Reveal=-1\n; FIXME SpySat=yes\/true is deprecated, use Reveal=-1 instead/I
-s/^BigGap=(y.*|t.*|1)/CreateGap=-1\n; FIXME BigGap=yes\/true is deprecated, use CreateGap=-1 instead/I
+s/^SpySat=(y.*|t.*|1)/Reveal=-1\n; FIXME SpySat=yes is deprecated, use Reveal=-1 instead/I
+s/^BigGap=(y.*|t.*|1)/CreateGap=-1\n; FIXME BigGap=yes is deprecated, use CreateGap=-1 instead/I
