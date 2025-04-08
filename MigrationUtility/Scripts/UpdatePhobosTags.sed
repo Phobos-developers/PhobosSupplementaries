@@ -157,5 +157,5 @@ s/^([0-9]+)=73,([0-9]+)(.*)/\1=10101,\2\3/I
 
 # from 0.1
 # =============================================
-s/^SpySat=(y.*|t.*|1)/Reveal=-1\n; FIXME SpySat=yes is deprecated, use Reveal=-1 instead/I
-s/^BigGap=(y.*|t.*|1)/CreateGap=-1\n; FIXME BigGap=yes is deprecated, use CreateGap=-1 instead/I
+s/^SpySat=(y.*|t.*|1)/Reveal=-1/I
+s/^BigGap=(y.*|t.*|1)/CreateGap=-1/I
