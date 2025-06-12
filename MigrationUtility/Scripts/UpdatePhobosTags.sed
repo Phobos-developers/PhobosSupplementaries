@@ -17,6 +17,7 @@ s/^Trajectory\.Straight\.Through(.*)=/Trajectory\.Through\1=/I
 s/^Trajectory\.Straight\.EdgeAttenuation=/Trajectory\.DamageEdgeAttenuation=/I
 s/^Trajectory\.Straight\.CountAttenuation=/Trajectory\.DamageCountAttenuation=/I
 s/^Trajectory\.Bombard\.EarlyDetonation=/Trajectory\.EarlyDetonation=/I
+s/^Trajectory\.Parabola\.BounceOnWater=(y.*|t.*|1)/Trajectory\.Parabola\.BounceOnTarget=all/I
 s/^Trajectory\..*\.DetonationHeight=/Trajectory\.DetonationHeight=/I
 s/^Trajectory\..*\.SubjectToGround=.*/&  ; FIXME No longer used. SubjectToGround has directly taken effect/I
 s/^Trajectory\..*\.UseDisperseBurst=.*/&  ; FIXME No longer used. Will be automatically activated by itself/I
