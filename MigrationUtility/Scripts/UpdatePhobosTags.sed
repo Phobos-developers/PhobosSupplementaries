@@ -1,6 +1,27 @@
 # reference: https://www.gnu.org/software/sed/manual/sed.html#sed-scripts
 # regexp playground (syntax may differ a bit): https://regexr.com
 
+# from post-0.4 devbuilds
+# =============================================
+s/^Trajectory\..*\.ApplyRangeModifiers=/Trajectory\.ApplyRangeModifiers=/I
+s/^Trajectory\..*\.DetonationDistance=/Trajectory\.DetonationDistance=/I
+s/^Trajectory\..*\.TargetSnapDistance=/Trajectory\.TargetSnapDistance=/I
+s/^Trajectory\..*\.LeadTimeCalculate=/Trajectory\.LeadTimeCalculate=/I
+s/^Trajectory\..*\.OffsetCoord=/Trajectory\.OffsetCoord=/I
+s/^Trajectory\..*\.RotateCoord=/Trajectory\.RotateCoord=/I
+s/^Trajectory\..*\.MirrorCoord=/Trajectory\.MirrorCoord=/I
+s/^Trajectory\..*\.AxisOfRotation=/Trajectory\.AxisOfRotation=/I
+s/^Trajectory\.Straight\.PassDetonate(.*)=/Trajectory\.PassDetonate\1=/I
+s/^Trajectory\.Straight\.Proximity(.*)=/Trajectory\.Proximity\1=/I
+s/^Trajectory\.Straight\.Through(.*)=/Trajectory\.Through\1=/I
+s/^Trajectory\.Straight\.EdgeAttenuation=/Trajectory\.DamageEdgeAttenuation=/I
+s/^Trajectory\.Straight\.CountAttenuation=/Trajectory\.DamageCountAttenuation=/I
+s/^Trajectory\.Bombard\.EarlyDetonation=/Trajectory\.EarlyDetonation=/I
+s/^Trajectory\.Parabola\.BounceOnWater=(y.*|t.*|1)/Trajectory\.Parabola\.BounceOnTarget=all/I
+s/^Trajectory\..*\.DetonationHeight=/Trajectory\.DetonationHeight=/I
+s/^Trajectory\..*\.SubjectToGround=.*/&  ; FIXME No longer used. SubjectToGround has directly taken effect/I
+s/^Trajectory\..*\.UseDisperseBurst=.*/&  ; FIXME No longer used. Will be automatically activated by itself/I
+
 # from post-0.3 devbuilds
 # =============================================
 s/^AnimList\.ShowOnZeroDamage=/CreateAnimsOnZeroDamage=/I
