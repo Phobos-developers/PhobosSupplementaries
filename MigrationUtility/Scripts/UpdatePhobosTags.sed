@@ -1,6 +1,11 @@
 # reference: https://www.gnu.org/software/sed/manual/sed.html#sed-scripts
 # regexp playground (syntax may differ a bit): https://regexr.com
 
+# from 0.4
+# =============================================
+s/^WarpAway=/Chronoshift\.WarpOut=/I
+/^\[General\]/,/^\[/ s/Chronoshift\.WarpOut=/WarpAway=/I
+
 # from post-0.3 devbuilds
 # =============================================
 s/^AnimList\.ShowOnZeroDamage=/CreateAnimsOnZeroDamage=/I
