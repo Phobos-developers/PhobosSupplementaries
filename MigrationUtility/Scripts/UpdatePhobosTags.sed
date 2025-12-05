@@ -7,6 +7,7 @@ s/^WarpAway=/Chronoshift\.WarpOut=/I
 /^\[General\]/,/^\[/ s/Chronoshift\.WarpOut=/WarpAway=/I
 s/^Crit\.AffectBelowPercent=/Crit\.AffectsBelowPercent=/I
 s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
+s/^DetonateOnAllMapObjects\.AffectHouses=/DetonateOnAllMapObjects\.AffectsHouses=/I
 
 # from post-0.3 devbuilds
 # =============================================
