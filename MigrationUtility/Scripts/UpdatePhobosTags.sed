@@ -7,10 +7,15 @@ s/^WarpAway=/Chronoshift\.WarpOut=/I
 /^\[General\]/,/^\[/ s/Chronoshift\.WarpOut=/WarpAway=/I
 s/^Crit\.AffectBelowPercent=/Crit\.AffectsBelowPercent=/I
 s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
-s/^DetonateOnAllMapObjects\.AffectHouses=/DetonateOnAllMapObjects\.AffectsHouses=/I
-s/^Convert([0-9]*)\.AffectedHouses=/Convert\1.AffectsHouses=/I
+s/^DetonateOnAllMapObjects\.AffectHouses=/DetonateOnAllMapObjects\.AffectsHouse=/I
+s/^Convert([0-9]*)\.AffectedHouses=/Convert\1.AffectsHouse=/I
 s/^LimboKill\.Affected=/LimboKill\.AffectsHouse=/I
 s/^Crit\.Affects=/Crit\.AffectsTarget=/I
+s/^RevengeWeapon\.AffectsHouses=/RevengeWeapon\.AffectsHouse=/I
+s/^ReflectDamage\.AffectsHouses=/ReflectDamage\.AffectsHouse=/I
+s/^Crit\.AffectsHouses=/Crit\.AffectsHouse=/I
+s/^KillWeapon\.AffectsHouses=/KillWeapon\.AffectsHouse=/I
+s/^KillWeapon\.OnFirer\.AffectsHouses=/KillWeapon\.OnFirer\.AffectsHouse=/I
 
 # from post-0.3 devbuilds
 # =============================================
