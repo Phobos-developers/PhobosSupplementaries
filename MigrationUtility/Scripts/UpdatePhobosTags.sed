@@ -9,6 +9,7 @@ s/^Crit\.AffectBelowPercent=/Crit\.AffectsBelowPercent=/I
 s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
 s/^DetonateOnAllMapObjects\.AffectHouses=/DetonateOnAllMapObjects\.AffectsHouses=/I
 s/^Convert([0-9]*)\.AffectedHouses=/Convert\1.AffectsHouses=/I
+s/^LimboKill\.Affected=/LimboKill\.AffectsHouse=/I
 
 # from post-0.3 devbuilds
 # =============================================
