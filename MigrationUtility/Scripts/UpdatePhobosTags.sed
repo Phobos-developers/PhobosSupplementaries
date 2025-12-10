@@ -16,6 +16,8 @@ s/^ReflectDamage\.AffectsHouses=/ReflectDamage\.AffectsHouse=/I
 s/^Crit\.AffectsHouses=/Crit\.AffectsHouse=/I
 s/^KillWeapon\.AffectsHouses=/KillWeapon\.AffectsHouse=/I
 s/^KillWeapon\.OnFirer\.AffectsHouses=/KillWeapon\.OnFirer\.AffectsHouse=/I
+s/^AffectTargets=/AffectsTarget=/I
+s/^DetonateOnAllMapObjects\.AffectTargets=/DetonateOnAllMapObjects\.AffectsTarget=/I
 
 # from post-0.3 devbuilds
 # =============================================
