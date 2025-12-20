@@ -18,6 +18,8 @@ s/^KillWeapon\.AffectsHouses=/KillWeapon\.AffectsHouse=/I
 s/^KillWeapon\.OnFirer\.AffectsHouses=/KillWeapon\.OnFirer\.AffectsHouse=/I
 s/^AffectTargets=/AffectsTarget=/I
 s/^DetonateOnAllMapObjects\.AffectTargets=/DetonateOnAllMapObjects\.AffectsTarget=/I
+s/^AutoFire=/AutoTargetOwnPosition=/I
+s/^AutoFire\.TargetSelf=/AutoTargetOwnPosition\.Self=/I
 
 # from post-0.3 devbuilds
 # =============================================
