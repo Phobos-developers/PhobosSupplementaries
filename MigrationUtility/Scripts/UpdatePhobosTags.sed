@@ -1,6 +1,10 @@
 # reference: https://www.gnu.org/software/sed/manual/sed.html#sed-scripts
 # regexp playground (syntax may differ a bit): https://regexr.com
 
+# from pre-0.5
+# =============================================
+s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
+
 # from 0.4
 # =============================================
 s/^WarpAway=/Chronoshift\.WarpOut=/I
@@ -13,7 +17,6 @@ s/^AutoFire\.TargetSelf=/AutoTargetOwnPosition\.Self=/I
 s/^DetonateOnAllMapObjects\.AffectHouses=/DetonateOnAllMapObjects\.AffectsHouse=/I
 s/^DetonateOnAllMapObjects\.AffectTargets=/DetonateOnAllMapObjects\.AffectsTarget=/I
 s/^Crit\.AffectBelowPercent=/Crit\.AffectsBelowPercent=/I
-s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
 s/^Crit\.Affects=/Crit\.AffectsTarget=/I
 s/^Crit\.AffectsHouses=/Crit\.AffectsHouse=/I
 s/^KillWeapon\.AffectsHouses=/KillWeapon\.AffectsHouse=/I
