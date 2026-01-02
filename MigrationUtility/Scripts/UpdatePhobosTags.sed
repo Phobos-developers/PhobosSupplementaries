@@ -3,6 +3,8 @@
 
 # from 0.4
 # =============================================
+s/^SpySat=(y.*|t.*|1)/Reveal=-1/I
+s/^BigGap=(y.*|t.*|1)/CreateGap=-1/I
 s/^WarpAway=/Chronoshift\.WarpOut=/I
 /^\[General\]/,/^\[/ s/Chronoshift\.WarpOut=/WarpAway=/I
 
@@ -160,8 +162,3 @@ s/^BreaksShield/Shield\.Break/I
 s/^([0-9]+)=71,([0-9]+)(.*)/\1=10100,\2\3/I
 s/^([0-9]+)=72,([0-9]+)(.*)/\1=10103,\2\3/I
 s/^([0-9]+)=73,([0-9]+)(.*)/\1=10101,\2\3/I
-
-# from 0.1
-# =============================================
-s/^SpySat=(y.*|t.*|1)/Reveal=-1/I
-s/^BigGap=(y.*|t.*|1)/CreateGap=-1/I
