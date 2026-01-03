@@ -5,6 +5,7 @@
 # =============================================
 s/^SpySat=(y.*|t.*|1)/Reveal=-1/I
 s/^BigGap=(y.*|t.*|1)/CreateGap=-1/I
+s/^UseCenterCoordsIfAttached=(y.*|t.*|1)/AttachedAnimPosition=center/I
 s/^WarpAway=/Chronoshift\.WarpOut=/I
 /^\[General\]/,/^\[/ s/Chronoshift\.WarpOut=/WarpAway=/I
 
