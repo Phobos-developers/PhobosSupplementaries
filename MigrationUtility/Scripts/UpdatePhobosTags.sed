@@ -1,6 +1,10 @@
 # reference: https://www.gnu.org/software/sed/manual/sed.html#sed-scripts
 # regexp playground (syntax may differ a bit): https://regexr.com
 
+# from pre-0.5
+# =============================================
+s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
+
 # from 0.4
 # =============================================
 s/^SpySat=(y.*|t.*|1)/Reveal=-1/I
@@ -8,6 +12,20 @@ s/^BigGap=(y.*|t.*|1)/CreateGap=-1/I
 s/^UseCenterCoordsIfAttached=(y.*|t.*|1)/AttachedAnimPosition=center/I
 s/^WarpAway=/Chronoshift\.WarpOut=/I
 /^\[General\]/,/^\[/ s/Chronoshift\.WarpOut=/WarpAway=/I
+s/^AffectTargets=/AffectsTarget=/I
+s/^ReflectDamage\.AffectsHouses=/ReflectDamage\.AffectsHouse=/I
+s/^RevengeWeapon\.AffectsHouses=/RevengeWeapon\.AffectsHouse=/I
+s/^AutoFire=/AutoTargetOwnPosition=/I
+s/^AutoFire\.TargetSelf=/AutoTargetOwnPosition\.Self=/I
+s/^DetonateOnAllMapObjects\.AffectHouses=/DetonateOnAllMapObjects\.AffectsHouse=/I
+s/^DetonateOnAllMapObjects\.AffectTargets=/DetonateOnAllMapObjects\.AffectsTarget=/I
+s/^Crit\.AffectBelowPercent=/Crit\.AffectsBelowPercent=/I
+s/^Crit\.Affects=/Crit\.AffectsTarget=/I
+s/^Crit\.AffectsHouses=/Crit\.AffectsHouse=/I
+s/^KillWeapon\.AffectsHouses=/KillWeapon\.AffectsHouse=/I
+s/^KillWeapon\.OnFirer\.AffectsHouses=/KillWeapon\.OnFirer\.AffectsHouse=/I
+s/^Convert([0-9]*)\.AffectedHouses=/Convert\1.AffectsHouse=/I
+s/^LimboKill\.Affected=/LimboKill\.AffectsHouse=/I
 
 # from post-0.3 devbuilds
 # =============================================
