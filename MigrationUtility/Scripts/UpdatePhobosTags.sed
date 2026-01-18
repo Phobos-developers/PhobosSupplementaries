@@ -7,7 +7,7 @@ s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
 
 # from 0.4
 # =============================================
-s/^SpySat=(y.*|t.*|1)/Reveal=-1/I
+s/^SpySat=(y.*|t.*|1)/SpySat=\1\nReveal=-1\n; FIXME Due to the same name issue, the original [BuildingType] -> SpySat=yes in Yuri's Revenge might have been mistaken as the newly added [WarheadType] -> SpySat=yes by Phobos, and this replacement was also performed. If this happens, you need to check and process all replacement results of this entry./I
 s/^BigGap=(y.*|t.*|1)/CreateGap=-1/I
 s/^UseCenterCoordsIfAttached=(y.*|t.*|1)/AttachedAnimPosition=center/I
 s/^WarpAway=/Chronoshift\.WarpOut=/I
