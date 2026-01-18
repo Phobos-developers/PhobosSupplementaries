@@ -24,6 +24,8 @@ s/^Crit\.Affects=/Crit\.AffectsTarget=/I
 s/^Crit\.AffectsHouses=/Crit\.AffectsHouse=/I
 s/^KillWeapon\.AffectsHouses=/KillWeapon\.AffectsHouse=/I
 s/^KillWeapon\.OnFirer\.AffectsHouses=/KillWeapon\.OnFirer\.AffectsHouse=/I
+s/^KillWeapon\.Affects=/KillWeapon\.AffectsTarget=/I
+s/^KillWeapon\.OnFirer\.Affects=/KillWeapon\.OnFirer\.AffectsTarget=/I
 s/^Convert([0-9]*)\.AffectedHouses=/Convert\1.AffectsHouse=/I
 s/^LimboKill\.Affected=/LimboKill\.AffectsHouse=/I
 
