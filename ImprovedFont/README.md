@@ -39,3 +39,4 @@ Credits
 - Kerbiter#3128 (Metadorius)
 - wiktorderelf#6546
 - Uranusian#0653 (Thrifinesma)
+- Noble_Fish (DeathFishAtEase)
