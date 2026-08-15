@@ -4,6 +4,8 @@
 # from pre-0.5
 # =============================================
 s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
+s/^AttackMove\.StopWhenTargetAcquired=/ApproachTarget.StopWhenInRange=/I
+s/^AttackMove\.PursuitTarget=/ApproachTarget.PursuitTarget=/I
 
 # from 0.4
 # =============================================
