@@ -1,6 +1,14 @@
 # reference: https://www.gnu.org/software/sed/manual/sed.html#sed-scripts
 # regexp playground (syntax may differ a bit): https://regexr.com
 
+# from 0.5
+# =============================================
+s/^CustomGS=(y.*|t.*|1)/; &\n; FIXME Enable new FPS system with EnableCustomFPS=true and set target FPS for each speed position using CustomGameSpeedFPS\.0-6 keys\. The old CustomGS system used intervals\/delays which cannot be directly converted\./I
+s/^CustomGS=(n.*|f.*|0)/; &\n; FIXME The old CustomGS system has been replaced\. If you want custom game speeds\, use EnableCustomFPS=true and CustomGameSpeedFPS\.0-6 keys instead\./I
+s/^CustomGS[0-6]\.ChangeInterval=(.*)/; &\n; FIXME Convert to direct FPS using CustomGameSpeedFPS\.N keys\. Old interval-based timing cannot be automatically migrated\./I
+s/^CustomGS[0-6]\.ChangeDelay=(.*)/; &\n; FIXME Convert to direct FPS using CustomGameSpeedFPS\.N keys\. Old delay-based timing cannot be automatically migrated\./I
+s/^CustomGS[0-6]\.DefaultDelay=(.*)/; &\n; FIXME Convert to direct FPS using CustomGameSpeedFPS\.N keys\. Old delay-based timing cannot be automatically migrated\./I
+
 # from pre-0.5
 # =============================================
 s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
