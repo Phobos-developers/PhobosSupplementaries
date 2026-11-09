@@ -1,6 +1,10 @@
 # reference: https://www.gnu.org/software/sed/manual/sed.html#sed-scripts
 # regexp playground (syntax may differ a bit): https://regexr.com
 
+# from 0.5
+# =============================================
+s/^PowerPlantEnhancer\.PowerPlants=/PowerPlantEnhancer\.AffectTypes=/I
+
 # from pre-0.5
 # =============================================
 s/^Crit\.AffectAbovePercent=/Crit\.AffectsAbovePercent=/I
